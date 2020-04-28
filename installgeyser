@@ -1,7 +1,7 @@
 BRANCH="feature%252Fsounds"
 CHANNEL="feature/sounds"
 
-echo [*] The installer is installing $CHANNEL branch of Geyser
+echo [*] The installer will install $CHANNEL branch of Geyser
 echo [1/5] Detecting and cleaning old installations...
 rm -f Geyser.jar
 rm -f start.sh
