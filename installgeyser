@@ -1,5 +1,12 @@
+BRANCH="$feature/sounds"
+CHANNEL="feature/sounds"
+
+master="master"
+feature/sounds="feature%252Fsounds"
+
+echo [*] The installer is installing $CHANNEL branch of Geyser
 echo [1/4] Downloading Geyser...
-wget -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/feature%252Fsounds/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
+wget -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/$BRANCH/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
 echo [2/4] Getting start.sh...
 wget -q https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.sh
 echo [3/4] Giving permissions to start.sh...
