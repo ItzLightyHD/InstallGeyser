@@ -19,6 +19,7 @@ Now the installer will clean the old installations and download the recommended 
 [3/5] Getting start.sh...
 [4/5] Giving permissions to start.sh...
 [5/5] Done! Now you can start Geyser with ./start.sh
+[*] Now you can delete this script too.
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
