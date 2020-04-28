@@ -1,7 +1,7 @@
 echo [1/4] Downloading Geyser...
-wget https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/feature%252Fsounds/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
+wget -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/feature%252Fsounds/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
 echo [2/4] Making start.sh...
-wget https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.sh
+wget -q https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.sh
 echo [3/4] Giving permissions to start.sh...
 chmod 777 start.sh
 echo [4/4] Done! Now you can start Geyser with ./start.sh
