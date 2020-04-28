@@ -12,4 +12,4 @@ wget -q https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start
 echo [4/5] Giving permissions to start.sh...
 chmod 777 start.sh
 echo [5/5] Done! Now you can start Geyser with ./start.sh
-echo [*] Now you can delete this script too.
+echo [*] You can delete the script if you want.
