@@ -1,6 +1,8 @@
 # InstallGeyser
 InstallGeyser is a simple script to download and install Geyser on Linux/MacOS
 
+[b]WARNING:[/b] For any help about Geyser, contact the official Geyser support (http://discord.geysermc.org/)
+
 ## Requirements
 To run the installer, you need wget, then to run Geyser just install Java 8
 
