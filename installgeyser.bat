@@ -12,5 +12,3 @@ echo [3/4] Getting start.bat...
 powershell -command Invoke-WebRequest https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.bat -OutFile start.bat
 echo [4/4] Done! Now you can start Geyser by opening start.bat
 echo [*] If you want, you can delete the script too.
-pause
-exit
