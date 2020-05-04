@@ -1,6 +1,6 @@
 @echo off
-set BRANCH=feature%%252Fsounds
-set CHANNEL=feature/sounds
+set BRANCH=master
+set CHANNEL=master
 
 echo [*] This installer will install the %CHANNEL% branch of Geyser for Windows
 echo [1/4] Detecting and cleaning old installations...
