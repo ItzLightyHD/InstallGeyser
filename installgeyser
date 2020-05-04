@@ -6,9 +6,9 @@ echo "[1/5] Detecting and cleaning old installations..."
 rm -f Geyser.jar
 rm -f start.sh
 echo "[2/5] Downloading Geyser..."
-wget -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/$BRANCH/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
+wget --no-check-certificate -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/$BRANCH/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
 echo "[3/5] Getting start.sh..."
-wget -q https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.sh
+wget --no-check-certificate -q https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.sh
 echo "[4/5] Giving permissions to start.sh..."
 chmod 777 start.sh
 echo "[5/5] Done! Now you can start Geyser with ./start.sh"
