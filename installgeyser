@@ -1,5 +1,5 @@
-BRANCH="feature%252Fsounds"
-CHANNEL="feature/sounds"
+BRANCH="master"
+CHANNEL="master"
 
 echo [*] The installer will install $CHANNEL branch of Geyser
 echo [1/5] Detecting and cleaning old installations...
