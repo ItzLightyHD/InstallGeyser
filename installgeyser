@@ -8,7 +8,9 @@ rm -f start.sh
 echo "[2/4] Downloading Geyser..."
 wget --no-check-certificate -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/$BRANCH/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
 echo "[3/4] Writing start.sh and giving it the permissions..."
-echo "java -Xmx1024M -Xms1024M -jar Geyser.jar" >> start.sh
+cat <<EOT >> start.sh
+java -Xmx1024M -Xms1024M -jar Geyser.jar
+EOT
 chmod 777 start.sh
 echo "[4/4] Done! Now you can start Geyser with ./start.sh"
 echo "[*] If you want, you can delete the script."
