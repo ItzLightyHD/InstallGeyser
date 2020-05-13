@@ -2,14 +2,13 @@ BRANCH="master"
 CHANNEL="master"
 
 echo "[*] The installer will install $CHANNEL branch of Geyser"
-echo "[1/5] Detecting and cleaning old installations..."
+echo "[1/4] Detecting and cleaning old installations..."
 rm -f Geyser.jar
 rm -f start.sh
-echo "[2/5] Downloading Geyser..."
+echo "[2/4] Downloading Geyser..."
 wget --no-check-certificate -q https://ci.nukkitx.com/job/GeyserMC/job/Geyser/job/$BRANCH/lastSuccessfulBuild/artifact/bootstrap/standalone/target/Geyser.jar
-echo "[3/5] Getting start.sh..."
-wget --no-check-certificate -q https://raw.githubusercontent.com/ItzLightyHD/InstallGeyser/master/start.sh
-echo "[4/5] Giving permissions to start.sh..."
+echo "[3/4] Writing start.sh and giving it the permissions..."
+echo "java -Xmx1024M -Xms1024M -jar Geyser.jar" >> start.sh
 chmod 777 start.sh
-echo "[5/5] Done! Now you can start Geyser with ./start.sh"
+echo "[4/4] Done! Now you can start Geyser with ./start.sh"
 echo "[*] If you want, you can delete the script."
