@@ -7,7 +7,7 @@ pkg install -y proot wget
 echo [2] Downloading and installing Ubuntu...
 mkdir ubuntu && cd ubuntu
 wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
-sed -i 's/disco/focal/g' ubuntu.sh
+sed -i 's/disco/focal/g' bash ubuntu.sh
 echo [3] Writing .bashrc to start Ubuntu and Geyser by a command...
 cd $HOME
 cat >.bashrc <<EOT
