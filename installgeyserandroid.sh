@@ -7,7 +7,8 @@ pkg install -y proot wget
 echo [2] Downloading and installing Ubuntu...
 mkdir ubuntu && cd ubuntu
 wget https://raw.githubusercontent.com/MFDGaming/ubuntu-in-termux/master/ubuntu.sh
-bash ubuntu.sh
+chmod 777 ubuntu.sh
+./ubuntu.sh
 echo [3] Writing .bashrc to start Ubuntu and Geyser by a command...
 cd $HOME
 cat >.bashrc <<EOT
