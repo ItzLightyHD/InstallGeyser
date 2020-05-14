@@ -33,3 +33,6 @@ rm -rf .profile
 
 exit
 EOM
+
+exit
+./startubuntu.sh
