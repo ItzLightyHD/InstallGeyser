@@ -6,18 +6,17 @@ echo [1] Installing requirements to install Ubuntu...
 pkg install -y proot wget
 echo [2] Downloading and installing Ubuntu...
 mkdir ubuntu && cd ubuntu
-wget https://raw.githubusercontent.com/MFDGaming/ubuntu-in-termux/master/ubuntu.sh
-chmod 777 ubuntu.sh
-./ubuntu.sh
+wget https://raw.githubusercontent.com/Neo-Oli/termux-ubuntu/master/ubuntu.sh
+sed -i 's/disco/focal/g' ubuntu.sh
 echo [3] Writing .bashrc to start Ubuntu and Geyser by a command...
 cd $HOME
 cat >.bashrc <<EOT
-alias geyser='cd $HOME/ubuntu; sed -i 's/#command+=" -b \/data/command+=" -b \/data/g' startubuntu.sh; java -Xmx1024M -Xms1024M -jar Geyser.jar'
+alias geyser='cd $HOME/ubuntu; sed -i 's/#command+=" -b \/data/command+=" -b \/data/g' start-ubuntu.sh; java -Xmx1024M -Xms1024M -jar Geyser.jar'
 EOT
 
 echo [4] Executing Ubuntu and doing preliminary things before installing Geyser...
 cd $HOME/ubuntu
-sed -i 's/#command+=" -b \/data/command+=" -b \/data/g' startubuntu.sh
+sed -i 's/#command+=" -b \/data/command+=" -b \/data/g' start-ubuntu.sh
 cd ~
 
 cat >.profile <<EOM
@@ -37,4 +36,4 @@ exit
 EOM
 
 exit
-./startubuntu.sh
+./start-ubuntu.sh
