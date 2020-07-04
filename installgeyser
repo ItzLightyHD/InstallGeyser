@@ -1,5 +1,5 @@
-BRANCH="master"
-CHANNEL="master"
+BRANCH="feature%252F1.16"
+CHANNEL="feature/1.16"
 
 echo "[*] The installer will install $CHANNEL branch of Geyser"
 echo "[1/4] Detecting and cleaning old installations..."
