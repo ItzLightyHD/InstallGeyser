@@ -1,5 +1,5 @@
 # InstallGeyser
-InstallGeyser is a simple script to download and install Geyser on Linux/MacOS
+InstallGeyser is a simple script to download and install Geyser on Windows/Linux/MacOS
 
 **WARNING:** For any help about Geyser, contact the official Geyser support (http://discord.geysermc.org/)
 
